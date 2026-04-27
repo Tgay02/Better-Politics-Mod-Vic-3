@@ -662,7 +662,7 @@ REPLACE:ideology_republican_leader = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
 			has_role = agitator
-			bpm_country_is_republic = yes
+			owner = {bpm_country_is_republic = yes}
 		}
 		# Monarchs cannot be republicans
 		NAND = {
@@ -963,7 +963,7 @@ REPLACE:ideology_radical = {
 				limit = {
 					owner = {
 						has_global_variable = bpm_peoples_springtime_happening
-						bpm_country_is_in_europe = yes
+						is_in_geographic_region = geographic_region_europe
 					}
 				}
 				multiply = {
@@ -1370,7 +1370,7 @@ ideology_cameralist = {
 
 	
 	interest_group_leader_trigger = {
-		ideology_cameralist_valid_trigger = yes
+		ideology_cameralist_leader_valid_trigger = yes
 	}
 	
 	interest_group_leader_weight = {
@@ -1424,7 +1424,7 @@ ideology_cameralist = {
 
 	non_interest_group_leader_trigger = {
         interest_group = {
-    		ideology_cameralist_valid_trigger = yes
+    		ideology_cameralist_leader_valid_trigger = yes
     	}
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
@@ -1506,16 +1506,6 @@ REPLACE:ideology_feminist = {
 			}
 			value = {
 				value = 50
-				# more likely if character is a woman after mass propaganda
-				if = {
-					limit = {
-						owner = { has_technology_researched = mass_propaganda }
-						is_female = yes
-					}
-					multiply = {
-						value = 1.5
-					}
-				}
 				# Pedro JE victory
 				if = {
 					limit = {
@@ -3803,7 +3793,7 @@ REPLACE:ideology_fascist = {
 						is_enacting_law = law_type:law_cultural_exclusion
 					}
 				}
-				is_in_government = yes
+				interest_group = {is_in_government = yes}
 			}
 			add = 150
 		}
@@ -4217,7 +4207,7 @@ ideology_anarchist_syndicalist = {
 
 	non_interest_group_leader_trigger = {
         interest_group = {
-			ideology_anarchist_syndicalist_valid_trigger
+			ideology_anarchist_syndicalist_valid_trigger = yes
     	}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -7922,18 +7912,14 @@ REPLACE:ideology_despotic_utopian = {
 		# less likely if not in government
 		if = {
 			limit = {
-				interest_group = {
-					is_in_government = no
-				}
+				is_in_government = no
 			}
 			add = -50
 		}
 		# less likely for loyal IG's
 		if = {
 			limit = {
-				interest_group = {
-					ig_approval > happy
-				}
+				ig_approval > happy
 			}
 			add = -50
 		}
@@ -8084,7 +8070,7 @@ ideology_reconstructionist = {
 		value = 100
 		if = {
 			limit = {
-				has_journal_entry = je_bpm_second_revolution
+				owner = {has_journal_entry = je_bpm_second_revolution}
 			}
 			add = -100
 		}
@@ -8200,7 +8186,7 @@ ideology_reactionary_anti_capitalist = {
 					has_law_or_variant = law_type:law_public_schools
 					has_law_or_variant = law_type:law_regulatory_bodies
 					has_law_or_variant = law_type:law_wage_subsidies
-					has_law_or_variant = law_type:law_state_controlled_labor_unions
+					has_law_or_variant = law_type:law_corporatized_unions
 				}
 			}
 			add = -25
@@ -8248,6 +8234,744 @@ ideology_reactionary_anti_capitalist = {
 				bpm_ig_is_rural_institutional = yes
 				is_interest_group_type = ig_reactionaries
 			}
+    	}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+
+ideology_leader_right_unionist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/idealogy_leader_enclavist.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_freedom_of_conscience = approve
+	}
+
+	lawgroup_centralization = {
+		law_unitary = disapprove
+		law_devolved = approve
+		law_federated = neutral
+		law_confederated = strongly_disapprove
+		law_ad_hoc_centralization = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_wealth_voting = approve
+	}
+	
+	lawgroup_officers = {
+		law_professional_officers = approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = approve
+	}
+
+	lawgroup_repeatable_military = {
+ 		law_repeatable_military_military_reform = approve
+	}
+
+    lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = approve
+		law_private_schools = neutral
+		law_public_schools = approve
+	}
+
+	lawgroup_repeatable_religion = {
+		law_repeatable_religion_promote_state_religion = approve
+	}
+
+	lawgroup_repeatable_politics = {
+		law_repeatable_politics_anti_corruption_drive = approve
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+	}
+
+	non_interest_group_leader_trigger = {
+        always = no
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+	}
+}
+
+ideology_leader_right_unionist_parliamentary_dissaprove = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/idealogy_leader_enclavist.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_freedom_of_conscience = approve
+	}
+
+	lawgroup_centralization = {
+		law_unitary = disapprove
+		law_devolved = approve
+		law_federated = neutral
+		law_confederated = strongly_disapprove
+		law_ad_hoc_centralization = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_wealth_voting = approve
+	}
+	
+	lawgroup_officers = {
+		law_professional_officers = approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = approve
+	}
+
+	lawgroup_repeatable_military = {
+ 		law_repeatable_military_military_reform = approve
+	}
+
+    lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = approve
+		law_private_schools = neutral
+		law_public_schools = approve
+	}
+
+	lawgroup_repeatable_religion = {
+		law_repeatable_religion_promote_state_religion = approve
+	}
+
+	lawgroup_repeatable_politics = {
+		law_repeatable_politics_anti_corruption_drive = strongly_disapprove
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+	}
+
+	non_interest_group_leader_trigger = {
+        always = no
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+	}
+}
+
+ideology_leader_left_unionist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_particularist.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_freedom_of_conscience = approve
+	}
+
+	lawgroup_centralization = {
+		law_unitary = disapprove
+		law_devolved = disapprove
+		law_federated = approve
+		law_confederated = strongly_disapprove
+		law_ad_hoc_centralization = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_wealth_voting = approve
+	}
+	
+	lawgroup_officers = {
+		law_professional_officers = approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = approve
+	}
+
+    lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = disapprove
+		law_private_schools = neutral
+		law_public_schools = approve
+	}
+
+	lawgroup_repeatable_military = {
+ 		law_repeatable_military_military_reform = approve
+	}
+
+	lawgroup_repeatable_religion = {
+		law_repeatable_religion_promote_state_religion = disapprove
+	}
+
+	lawgroup_repeatable_politics = {
+		law_repeatable_politics_anti_corruption_drive = approve
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+	}
+
+	non_interest_group_leader_trigger = {
+        always = no
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+	}
+}
+
+ideology_leader_left_unionist_parliamentary_dissaprove = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_particularist.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_freedom_of_conscience = approve
+	}
+
+	lawgroup_centralization = {
+		law_unitary = disapprove
+		law_devolved = disapprove
+		law_federated = approve
+		law_confederated = strongly_disapprove
+		law_ad_hoc_centralization = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_wealth_voting = approve
+	}
+	
+	lawgroup_officers = {
+		law_professional_officers = approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = approve
+	}
+
+    lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = disapprove
+		law_private_schools = neutral
+		law_public_schools = approve
+	}
+
+	lawgroup_repeatable_military = {
+ 		law_repeatable_military_military_reform = approve
+	}
+
+	lawgroup_repeatable_religion = {
+		law_repeatable_religion_promote_state_religion = disapprove
+	}
+
+	lawgroup_repeatable_politics = {
+		law_repeatable_politics_anti_corruption_drive = strongly_disapprove
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+	}
+
+	non_interest_group_leader_trigger = {
+        always = no
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+	}
+}
+
+ideology_leader_anti_clericalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_anti_clerical.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = approve
+		law_total_separation = strongly_approve
+		law_state_atheism = neutral
+	}
+
+	lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = disapprove
+		law_private_schools = neutral
+		law_public_schools = neutral
+	}
+
+	lawgroup_health_system = {
+		law_charitable_health_system = disapprove
+	}
+
+	lawgroup_repeatable_religion = {
+		law_repeatable_religion_promote_state_religion = strongly_disapprove
+		law_repeatable_religion_promote_secular_values = strongly_approve
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		OR = {
+			OR = {
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_intelligentsia
+			}
+			interest_group = {
+				OR = {
+					has_ideology = ideology_rel_radical_secularist
+					has_ideology = ideology_rel_secularist
+				}
+			}
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 50
+		
+		interest_group = {
+			if = {
+    			limit = {
+    				OR = {
+						has_ideology = ideology_rel_secularist
+						has_ideology = ideology_rel_radical_secularist
+					}
+    			}
+    			add = 50
+				add = {
+					value = ROOT.ig:ig_devout.ig_clout
+					multiply = 50
+				}
+    		}
+			if = {
+    			limit = {
+    				is_interest_group_type = ig_intelligentsia
+    			}
+    			add = 25
+    		}
+			if = {
+    			limit = {
+    				is_interest_group_type = ig_radicals
+    			}
+    			add = 50
+    		}
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+        interest_group = {
+    		is_interest_group_type = ig_devout
+    	}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 50
+
+		interest_group = {
+			if = {
+    			limit = {
+    				OR = {
+						has_ideology = ideology_rel_moralist
+						has_ideology = ideology_rel_radical_moralist
+						leader = {
+							OR = {
+								has_ideology = ideology_traditionalist
+							}
+						}
+					}
+    			}
+    			add = -1000
+    		}
+		}	
+	}
+}
+
+ideology_leader_ultramontane = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_papal_paternalistic.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = approve
+		law_total_separation = strongly_disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = approve
+		law_appointed_bureaucrats = neutral
+		law_hereditary_bureaucrats = neutral
+	}
+
+	lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = approve
+		law_private_schools = neutral
+		law_public_schools = neutral
+	}
+
+	lawgroup_health_system = {
+		law_charitable_health_system = approve
+	}
+
+	lawgroup_repeatable_religion = {
+		law_repeatable_religion_promote_state_religion = strongly_approve
+		law_repeatable_religion_anti_secular_reaction = strongly_approve
+		law_repeatable_religion_promote_secular_values = strongly_disapprove
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		bpm_ig_is_socialist = no
+		OR = {
+			OR = {
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			interest_group = {
+				OR = {
+					has_ideology = ideology_rel_moralist
+					has_ideology = ideology_rel_radical_moralist
+				}
+			}
+		}
+		OR = {
+			owner = {
+				country_has_state_religion = rel:catholic
+			}
+			country_has_state_religion = rel:catholic
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 50
+		
+		interest_group = {
+			if = {
+    			limit = {
+    				OR = {
+						has_ideology = ideology_rel_secularist
+						has_ideology = ideology_rel_radical_secularist
+					}
+    			}
+    			add = 50
+				add = {
+					value = ROOT.ig:ig_devout.ig_clout
+					multiply = 50
+				}
+    		}
+			if = {
+    			limit = {
+    				is_interest_group_type = ig_intelligentsia
+    			}
+    			add = 25
+    		}
+			if = {
+    			limit = {
+    				is_interest_group_type = ig_radicals
+    			}
+    			add = 50
+    		}
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+        always = no
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+	}
+}
+
+ideology_leader_unorthodox_unionist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_junker_paternalistic.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = disapprove
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = neutral
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+		law_organic_democracy = strongly_disapprove
+	}	
+
+	lawgroup_trade_policy = {		
+		law_protectionism = disapprove
+		law_mercantilism = neutral		
+		law_isolationism = disapprove
+		law_free_trade = approve
+	}
+
+	lawgroup_education_system = {
+		law_no_schools = disapprove
+		law_religious_schools = approve
+		law_private_schools = neutral
+		law_public_schools = approve
+	}
+
+	lawgroup_officers = {
+		law_professional_officers = approve
+	}
+
+	lawgroup_centralization = {
+		law_unitary = disapprove
+		law_devolved = neutral
+		law_federated = approve
+		law_confederated = disapprove
+		law_ad_hoc_centralization = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_freedom_of_conscience = approve
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = approve
+	}
+	
+	interest_group_leader_trigger = {
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 0
+	}
+
+	non_interest_group_leader_trigger = {
+        always = no
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 0
+	}
+}
+
+ideology_leader_liberal_paternalistic = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_individualist.dds"
+	
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = disapprove
+		law_landed_voting = neutral
+		law_wealth_voting = approve
+		law_census_voting = approve
+		law_universal_suffrage = disapprove
+		law_anarchy = strongly_disapprove
+		law_organic_democracy = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = {		
+		law_protectionism = neutral
+		law_mercantilism = disapprove		
+		law_isolationism = disapprove
+		law_free_trade = approve
+	}
+
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = disapprove
+		law_restricted_child_labor = approve
+		law_compulsory_primary_school = approve
+	}
+
+	lawgroup_welfare = {
+		law_no_social_security = disapprove
+		law_poor_laws = neutral
+		law_wage_subsidies = approve
+		law_old_age_pension = neutral
+	}
+
+	lawgroup_labor_rights = {		
+		law_worker_protections = neutral
+		law_regulatory_bodies = approve
+		law_no_workers_rights = neutral
+	}
+
+	lawgroup_work_time_regulations = {
+		law_unregulated_work_time = neutral
+		law_token_time_regulations = approve
+		law_limited_work_hours = neutral
+		law_protected_leisure = disapprove
+	}
+	
+	interest_group_leader_trigger = {
+		bpm_interest_group_is_activated = yes 
+		bpm_ig_is_socialist = no
+		NOT = {
+			has_ideology = ideology:ideology_wel_distributist_welfare
+		}
+		owner = {
+			NOT = {
+				country_has_state_religion = rel:atheist
+			}
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 25
+
+		if = {
+			limit = {
+				bpm_ig_is_liberal = yes
+				NOT = { is_interest_group_type = ig_market_liberals }	
+			}
+			add = 25
+		}
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_petty_bourgeoisie
+				}
+			}
+			add = 25
+		}
+		# not very relevant if issues are already addressed
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						has_law = law_type:law_council_republic
+					}
+					has_law = law_type:law_public_schools
+					has_law = law_type:law_regulatory_bodies
+					has_law = law_type:law_wage_subsidies
+					has_law = law_type:law_corporatized_unions
+				}
+			}
+			add = -100
+		}
+		# less likely for landowners and devout
+		if = {
+			limit = {
+				is_interest_group_type = ig_landowners
+			}
+			add = -75
+		}
+		# more likely for content trade unions and rural folk outside of council republic
+		if = {
+			limit = {
+				bpm_ig_is_lower_institutional = yes
+				ig_approval >= 0
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+				}
+			}
+			add = 25
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+        interest_group = {
+    		bpm_interest_group_is_activated = yes
+    		bpm_ig_is_socialist = no
+    		NOT = {
+    			has_ideology = ideology:ideology_wel_distributist_welfare
+    		}
+    	}
+		owner = {
+			NOT = {
+				country_has_state_religion = rel:atheist
+			}
+		}
+		# Agitators should have an ideology at odds with current laws
+		NAND = {
+			has_role = agitator
+			owner = {
+				NOT = { has_law = law_type:law_council_republic }
+				has_law = law_type:law_public_schools
+				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_restricted_child_labor
+			}
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 25
+	}
+}
+
+
+
+ideology_sakoku = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_blank.dds"
+
+	character_ideology = yes
+	show_in_list = no
+
+	interest_group_leader_trigger = {
+		bpm_ig_is_institutional = yes
+	}
+	
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+        interest_group = {
+    		is_interest_group_type = ig_landowners
+    	}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+
+ideology_reluctant_modernizer = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_blank.dds"
+
+	character_ideology = yes
+	show_in_list = no
+
+	interest_group_leader_trigger = {
+		bpm_ig_is_institutional = yes
+	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		}
+
+	non_interest_group_leader_trigger = {
+        interest_group = {
+    		is_interest_group_type = ig_landowners
     	}
 	}
 	

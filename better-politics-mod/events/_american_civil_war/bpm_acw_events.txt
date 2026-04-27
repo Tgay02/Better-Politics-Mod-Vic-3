@@ -3,7 +3,7 @@ namespace = acw_events
 
 bpm_acw_events.999 = { # Dummy Event
 	type = country_event
-
+    hidden = yes
 	dlc = dlc_bpm
 
 	event_image = {
@@ -111,7 +111,7 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -119,10 +119,10 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -130,13 +130,13 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -144,16 +144,16 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -161,19 +161,19 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -181,22 +181,22 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -204,25 +204,25 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_DELAWARE.region_state:USA = {	
+				s:STATE_DELAWARE.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -230,28 +230,28 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_DELAWARE.region_state:USA = {	
+				s:STATE_DELAWARE.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_MISSOURI.region_state:USA = {	
+				s:STATE_MISSOURI.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -259,31 +259,31 @@ bpm_acw_events.1 = { # FSA Spawn Event
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_DELAWARE.region_state:USA = {	
+				s:STATE_DELAWARE.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_MISSOURI.region_state:USA = {	
+				s:STATE_MISSOURI.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_MARYLAND.region_state:USA = {	
+				s:STATE_MARYLAND.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -295,34 +295,34 @@ bpm_acw_events.1 = { # FSA Spawn Event
 			s:STATE_NORTH_DAKOTA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+			s:STATE_SOUTH_DAKOTA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_INDIANA.region_state:USA = {	
+			s:STATE_INDIANA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_ILLINOIS.region_state:USA = {	
+			s:STATE_ILLINOIS.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_NEBRASKA.region_state:USA = {	
+			s:STATE_NEBRASKA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_KANSAS.region_state:USA = {	
+			s:STATE_KANSAS.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_NEW_JERSEY.region_state:USA = {	
+			s:STATE_NEW_JERSEY.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_DELAWARE.region_state:USA = {	
+			s:STATE_DELAWARE.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_MISSOURI.region_state:USA = {	
+			s:STATE_MISSOURI.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_MARYLAND.region_state:USA = {	
+			s:STATE_MARYLAND.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_KENTUCKY.region_state:USA = {	
+			s:STATE_KENTUCKY.region_state:USA = {
 				set_state_owner = c:FSA
 			}
 		}
@@ -1138,7 +1138,7 @@ bpm_acw_events.4 = { # whigs collapse Event
 		c:USA = { has_variable = bpm_2nd_party_system }
 		in_election_campaign = yes
 		NOT = { c:USA = { has_modifier = bpm_gag_rule } }
-		var:bpm_secession_tension_prog_var > 30 
+		var:bpm_secession_tension_prog_var > 30
 	}
 
 	immediate = {
@@ -1319,7 +1319,7 @@ bpm_acw_events.6 = { # wilmot overturned Event
 		c:USA = ROOT
 		c:USA = { has_variable = bpm_william_walker }
         c:USA = { has_variable = bpm_wilmot_proviso }
-		var:bpm_secession_tension_prog_var > 30 
+		var:bpm_secession_tension_prog_var > 30
 	}
 
 	immediate = {
@@ -1390,7 +1390,7 @@ bpm_acw_events.7 = { # 1850 nullified Event
 		c:USA = ROOT
 		c:USA = { has_variable = bpm_william_walker }
         c:USA = { has_variable = bpm_1850_compromise }
-		var:bpm_secession_tension_prog_var > 30 
+		var:bpm_secession_tension_prog_var > 30
 	}
 
 	immediate = {
@@ -1462,7 +1462,7 @@ bpm_acw_events.8 = { # bleeding state Event
         NOT = { c:USA = { has_variable = bpm_bleeding_state } }
 		NOT = { c:USA = { has_variable = bpm_1850_compromise } }
 		NOT = { c:USA = { has_variable = bpm_wilmot_proviso } }
-		var:bpm_secession_tension_prog_var > 30 
+		var:bpm_secession_tension_prog_var > 30
 		any_scope_state = {
 			is_slave_state = no
 			is_incorporated = no
@@ -3539,16 +3539,16 @@ bpm_acw_events.28 = {
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -3556,19 +3556,19 @@ bpm_acw_events.28 = {
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -3576,22 +3576,22 @@ bpm_acw_events.28 = {
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -3599,25 +3599,25 @@ bpm_acw_events.28 = {
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_DELAWARE.region_state:USA = {	
+				s:STATE_DELAWARE.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -3625,28 +3625,28 @@ bpm_acw_events.28 = {
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_DELAWARE.region_state:USA = {	
+				s:STATE_DELAWARE.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_MISSOURI.region_state:USA = {	
+				s:STATE_MISSOURI.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -3654,31 +3654,31 @@ bpm_acw_events.28 = {
 				s:STATE_NORTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+				s:STATE_SOUTH_DAKOTA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_INDIANA.region_state:USA = {	
+				s:STATE_INDIANA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_ILLINOIS.region_state:USA = {	
+				s:STATE_ILLINOIS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEBRASKA.region_state:USA = {	
+				s:STATE_NEBRASKA.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_KANSAS.region_state:USA = {	
+				s:STATE_KANSAS.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_NEW_JERSEY.region_state:USA = {	
+				s:STATE_NEW_JERSEY.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_DELAWARE.region_state:USA = {	
+				s:STATE_DELAWARE.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_MISSOURI.region_state:USA = {	
+				s:STATE_MISSOURI.region_state:USA = {
 					set_state_owner = c:FSA
 				}
-				s:STATE_MARYLAND.region_state:USA = {	
+				s:STATE_MARYLAND.region_state:USA = {
 					set_state_owner = c:FSA
 				}
 			}
@@ -3690,34 +3690,34 @@ bpm_acw_events.28 = {
 			s:STATE_NORTH_DAKOTA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_SOUTH_DAKOTA.region_state:USA = {	
+			s:STATE_SOUTH_DAKOTA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_INDIANA.region_state:USA = {	
+			s:STATE_INDIANA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_ILLINOIS.region_state:USA = {	
+			s:STATE_ILLINOIS.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_NEBRASKA.region_state:USA = {	
+			s:STATE_NEBRASKA.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_KANSAS.region_state:USA = {	
+			s:STATE_KANSAS.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_NEW_JERSEY.region_state:USA = {	
+			s:STATE_NEW_JERSEY.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_DELAWARE.region_state:USA = {	
+			s:STATE_DELAWARE.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_MISSOURI.region_state:USA = {	
+			s:STATE_MISSOURI.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_MARYLAND.region_state:USA = {	
+			s:STATE_MARYLAND.region_state:USA = {
 				set_state_owner = c:FSA
 			}
-			s:STATE_KENTUCKY.region_state:USA = {	
+			s:STATE_KENTUCKY.region_state:USA = {
 				set_state_owner = c:FSA
 			}
 		}
@@ -4429,7 +4429,7 @@ bpm_acw_events.107 = { # moment of truth
 
 	option = {
 		name = bpm_acw_events.107.a
-		trigger = {	
+		trigger = {
 			AND = {
 				ruler.interest_group = {
 					NOT = { is_member_of_party = owner.py:liberal_party }
@@ -4447,7 +4447,7 @@ bpm_acw_events.107 = { # moment of truth
 
 	option = {
 		name = bpm_acw_events.107.b
-		trigger = {	
+		trigger = {
 			OR = {
 				ruler.interest_group = {
 					is_member_of_party = owner.py:liberal_party
@@ -5866,7 +5866,7 @@ bpm_acw_events.302 = { # The Private Accomodations Amendment
 		name = bpm_acw_events.302.a
 		default_option = yes
 		set_variable = bpm_reconstruction_12
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     		    	target = cu:afro_american
@@ -7617,7 +7617,7 @@ bpm_acw_events.333 = { # The Blaine Amendment
 	}
 	option = {
 		name = bpm_acw_events.333.b
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
        				target = cu:south_german
@@ -7855,6 +7855,11 @@ bpm_acw_events.333 = { # The Blaine Amendment
        				target = cu:caribeno
        		 		value = -20
     			}
+		every_scope_state = {
+			add_religion_standard_of_living_modifier = {
+				religion = rel:catholic
+				months = 60
+				multiplier = -3
 			}
 		}
 		trigger_event = { id = bpm_acw_events.334 days = 30 popup = yes } # The Democrat Dilemma
@@ -7886,7 +7891,8 @@ bpm_acw_events.334 = { # The Democrat Dilemma
 	}
 
 	immediate = {
-		remove_modifier = bpm_blaine_amendment
+		remove_modifier = bpm_blaine_amendment_north
+		remove_modifier = bpm_blaine_amendment_south
 	}
 
 	option = { 
@@ -11539,7 +11545,7 @@ bpm_acw_events.522 = { # Immigrant Policy Plank
 
 	option = {
 		name = bpm_acw_events.522.a
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     			    target = cu:khmer
@@ -11865,7 +11871,7 @@ bpm_acw_events.522 = { # Immigrant Policy Plank
 	option = {
 		name = bpm_acw_events.522.b
 		default_option = yes
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     			    target = cu:khmer
@@ -12310,7 +12316,7 @@ bpm_acw_events.522 = { # Immigrant Policy Plank
 
 	option = {
 		name = bpm_acw_events.522.c
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     			    target = cu:khmer
@@ -12755,7 +12761,7 @@ bpm_acw_events.522 = { # Immigrant Policy Plank
 
 	option = {
 		name = bpm_acw_events.522.e
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     			    target = cu:khmer
@@ -13357,7 +13363,7 @@ bpm_acw_events.524 = { # African-American Policy Plank
 
 	option = {
 		name = bpm_acw_events.524.a
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     		    	target = cu:afro_american
@@ -13380,7 +13386,7 @@ bpm_acw_events.524 = { # African-American Policy Plank
 		show_as_unavailable = {
 			always = yes
 		}
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     		    	target = cu:afro_american
@@ -13410,7 +13416,7 @@ bpm_acw_events.524 = { # African-American Policy Plank
 		show_as_unavailable = {
 			always = yes
 		}
-		hidden_effect = { 
+		hidden_effect = {
 			every_scope_state = {
 				add_acceptance = {
     		    	target = cu:afro_american
@@ -14738,17 +14744,17 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 	cooldown = {
 		years = 100
 	}
-	
+
 	trigger = {
 		AND = {
 			any_scope_state = {
 				state_region = s:STATE_ARKANSAS
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14757,11 +14763,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_MISSOURI
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14770,11 +14776,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_IOWA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14783,11 +14789,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_WISCONSIN
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14796,11 +14802,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_ILLINOIS
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14809,11 +14815,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_INDIANA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14822,11 +14828,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_KENTUCKY
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14835,11 +14841,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_TENNESSEE
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14848,11 +14854,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_NORTH_CAROLINA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14861,11 +14867,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_VIRGINIA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14874,11 +14880,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_WEST_VIRGINIA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14887,11 +14893,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_OHIO
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14900,11 +14906,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_PENNSYLVANIA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14913,11 +14919,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_MICHIGAN
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14926,11 +14932,11 @@ bpm_acw_events.801 = { #regulating Frontier Banks
 			any_scope_state = {
 				state_region = s:STATE_MINNESOTA
 				AND = {
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_government_administration
 						level >= 5
 					}
-					any_scope_building = { 
+					any_scope_building = {
 						is_building_type = building_railway
 						level >= 1
 					}
@@ -14969,24 +14975,24 @@ bpm_acw_events.802 = { # civilizing New York City
 	cooldown = {
 		years = 100
 	}
-	
+
 	trigger = {
 		any_scope_state = {
 			state_region = s:STATE_NEW_YORK
 			AND = {
-				any_scope_building = { 
+				any_scope_building = {
 					is_building_type = building_government_administration
 					level >= 50
 				}
-				any_scope_building = { 
+				any_scope_building = {
 					is_building_type = building_port
 					level >= 10
 				}
-				any_scope_building = { 
+				any_scope_building = {
 					is_building_type = building_railway
 					level >= 5
 				}
-				any_scope_building = { 
+				any_scope_building = {
 					is_building_type = building_urban_center
 					level >= 15
 				}
@@ -15024,7 +15030,7 @@ bpm_acw_events.803 = { # Migration Controls
 	cooldown = {
 		years = 100
 	}
-	
+
 	trigger = {
 		has_law = law_type:law_migration_controls
 	}
@@ -15059,7 +15065,7 @@ bpm_acw_events.804 = { # Freedom of Conscience
 	cooldown = {
 		years = 100
 	}
-	
+
 	trigger = {
 		has_law = law_type:law_freedom_of_conscience
 	}
@@ -15094,7 +15100,7 @@ bpm_acw_events.805 = { # National Supremacy
 	cooldown = {
 		years = 100
 	}
-	
+
 	trigger = {
 		exists = c:USA
 		c:USA = ROOT
