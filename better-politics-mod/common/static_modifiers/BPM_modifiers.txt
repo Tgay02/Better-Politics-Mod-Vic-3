@@ -1631,3 +1631,8 @@ bpm_empowered_church_institutions = {
 	
 	interest_group_pol_str_mult = 0.15
 }
+
+bpm_council_takeover = {
+    icon = gfx/interface/icons/notification_icons/bureaucracy.dds
+    country_bureaucracy_add = 2
+}

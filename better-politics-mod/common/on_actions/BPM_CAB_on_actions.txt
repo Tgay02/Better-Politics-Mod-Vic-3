@@ -55,6 +55,7 @@ on_monthly_pulse_country = {
         bpm_reload_cabinet_picks_expectations
         bpm_reload_urban_collectivization_modifier
         bpm_reload_cab_maxinvestment_from_skills
+        bpm_reload_councils
     }
 }
 
@@ -240,6 +241,41 @@ bpm_reload_synergy_player = {
                 is_player = yes
             }
             bpm_cab_update_synergy = yes
+        }
+    }
+}
+
+bpm_reload_councils = {
+    effect = {
+        remove_modifier = bpm_council_takeover
+        add_modifier = {
+            name = bpm_council_takeover
+            multiplier = {
+                value = 0
+                every_scope_building = {
+                    limit = {
+                        OR = {
+                            is_building_group = bg_manufacturing
+                            is_building_group = bg_extraction
+                            is_building_group = bg_service
+                            is_building_group = bg_arts
+                            is_building_group = bg_power
+                            is_building_group = bg_infrastructure
+                        }
+                        owner = {
+                            AND = {
+                                has_law = law_type:law_factory_councils
+                                has_law = law_type:law_council_republic
+                            }
+                        }
+                    }
+                    add = {
+                        value = 1
+                        multiply = level
+                        multiply = occupancy
+                    }
+                }
+            }
         }
     }
 }
